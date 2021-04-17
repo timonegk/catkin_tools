@@ -41,7 +41,7 @@ before_script:
   - popd
 script:
   # Run catkin_tools test harness
-  - python setup.py nosetests -s
+  - python setup.py nosetests --tests tests -s
   # Build documentation
   - pushd docs
   - make html
